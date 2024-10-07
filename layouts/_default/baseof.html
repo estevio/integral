@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{{.Title}}</title>
+    </head>
+    <body>
+        <header style="position:sticky; top:0; background-color:#FDBD3A; padding: 10px 16px; overflow:hidden">
+            <div>
+                <img src="/radio_png.png" alt="logo" height="40px">
+                <ul style="float: right;">
+                    <li style="display:inline;padding:10px;"><a href="/">Home</a></li>
+                    <li style="display:inline;padding:10px;">Videos</li>
+                    <li style="display:inline;padding:10px;">Nosotres</li>
+                    <li style="display:inline;padding:10px;"><a href="/convocatorias">Convocatorias</a></li>
+                </ul>
+            </div>
+        </header>
+        {{ block "main" .}}
+
+        {{end}}
+        <footer>
+            <div style="display:flex; justify-content: space-between; background-color: #EC7241; padding-top: 30px; padding-bottom: 70px;">
+                <ul style="list-style-type: none;">
+                    <li style="font-weight: bold;">La Radio Integral</li>
+                    <li>Un pequeño párrafo sobre qué hacemos y quienes somos</li>
+                </ul>
+                <ul style="list-style-type: none;">
+                    <li style="font-weight: bold;">Navegación</li>
+                    <li>Videos</li>
+                    <li>Nosotres</li>
+                    <li>Convocatorias</li>
+                </ul>
+                <ul style="list-style-type: none; padding-right: 50px;">
+                    <li style="font-weight: bold;">Contacto</li>
+                    <li>Correo: laradiointegral@ing.uchile.cl</li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>
